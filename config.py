@@ -22,7 +22,7 @@ API_HASH = os.environ.get("API_HASH", "08bdb932cf2815a46b2a5f17cf245bfe")
 
 
 OWNER = os.environ.get("OWNER", "@iTz_Anayokoji")  # Owner username
-OWNER_ID = int(os.environ.get("OWNER_ID", "1768198143"))  # Owner user id
+OWNER_ID = int(os.environ.get("OWNER_ID", "6450266465"))  # Owner user id
 DB_URL = os.environ.get("DB_URL", "")
 DB_NAME = os.environ.get("DB_NAME", "")
 
@@ -42,7 +42,7 @@ SECONDS = int(os.getenv("SECONDS", "600"))  # auto delete in seconds
 
 
 PORT = os.environ.get("PORT", "8080")
-TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "3"))
+TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "1"))
 
 
 # start message
@@ -51,7 +51,7 @@ START_MSG = os.environ.get(
 
 try:
     ADMINS = [6450266465]
-    for x in (os.environ.get("ADMINS", "").split()):
+    for x in (os.environ.get("ADMINS", "6450266465").split()):
         ADMINS.append(int(x))
 except ValueError:
     raise Exception("Your Admins list does not contain valid integers.")
@@ -72,7 +72,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "<b>❌Bakaa Dont do this</b>"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(1768198143)
+ADMINS.append(6450266465)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
