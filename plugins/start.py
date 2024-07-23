@@ -221,7 +221,6 @@ async def not_joined(client: Client, message: Message):
                                  url=client.invitelink4),
         ]
     ]
-
     try:
         buttons.append(
             [
