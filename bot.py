@@ -30,12 +30,12 @@ class Bot(Client):
         usr_bot_me = await self.get_me()
         self.uptime = datetime.now()
 
-        if FORCE_SUB_CHANNEL_1:
+        if FORCE_SUB_CHANNEL1:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_1)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL1)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_1)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_1)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL1)
+                    link = (await self.get_chat(FORCE_SUB_CHANNEL1)).invite_link
                 self.invitelink = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
@@ -45,10 +45,10 @@ class Bot(Client):
                 sys.exit()
         if FORCE_SUB_CHANNEL_2:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_2)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL2)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_2)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_2)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL2)
+                    link = (await self.get_chat(FORCE_SUB_CHANNEL2)).invite_link
                 self.invitelink2 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
@@ -58,10 +58,10 @@ class Bot(Client):
                 sys.exit()
         if FORCE_SUB_CHANNEL_3:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_3)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL3)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_3)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_3)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL3)
+                    link = (await self.get_chat(FORCE_SUB_CHANNEL3)).invite_link
                 self.invitelink3 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
@@ -71,10 +71,10 @@ class Bot(Client):
                 sys.exit()
         if FORCE_SUB_CHANNEL_4:
             try:
-                link = (await self.get_chat(FORCE_SUB_CHANNEL_4)).invite_link
+                link = (await self.get_chat(FORCE_SUB_CHANNEL4)).invite_link
                 if not link:
-                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL_4)
-                    link = (await self.get_chat(FORCE_SUB_CHANNEL_4)).invite_link
+                    await self.export_chat_invite_link(FORCE_SUB_CHANNEL4)
+                    link = (await self.get_chat(FORCE_SUB_CHANNEL4)).invite_link
                 self.invitelink4 = link
             except Exception as a:
                 self.LOGGER(__name__).warning(a)
